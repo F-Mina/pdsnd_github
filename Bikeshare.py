@@ -36,19 +36,19 @@ def get_filters():
 
     return city, month, day
 
-# Loaded fata for specified ciy and filters by month and day.
+# Loaded data for specified city and filters by month and day.
 def load_data(city, month, day):
   
-    df = pd.read_csv(CITY_DATA[city])
+    bikeshare = pd.read_csv(CITY_DATA[city])
 
 # Converted the Start Time column to datetime
-    df['Start Time'] = pd.to_datetime(df['Start Time'])
+    bikeshare['Start Time'] = pd.to_datetime(bikeshare['Start Time'])
 
     # Extracted month and day of week from Start Time to create new columns
 
-    df['month'] = df['Start Time'].dt.month
+    bikeshare['month'] = bikeshare['Start Time'].dt.month
 
-    df['day_of_week'] = df['Start Time'].dt.weekday_name
+    bikeshare['day_of_week'] = bikeshare['Start Time'].dt.weekday_name
 
     # Filtered by month
 
@@ -90,9 +90,9 @@ def time_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-
+# The most popular stations and trips.
 def station_stats(df):
-    """Displays statistics on the most popular stations and trip."""
+    
     print('\nCalculating The Most Popular Stations and Trip...\n')
     start_time = time.time()
 

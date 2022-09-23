@@ -1,46 +1,23 @@
-# Bikeshare
+# Date Created
 
 The Bikeshare dataset is part of Nanodegree in Data Science - Phyton.
-Bicycle-sharing systems allow users to rent bicycles on a very short-term basis for a price. This will enable people to borrow a bike from point A and return it at point B, though they can also return it to the same location if they'd like to go for a ride.
+This project created on the 22th of September 2022.
 
-## Description
+## Project Bikeshare
 
-### The Datasets
+### Description
 
- Randomly selected data for the first six months of 2017 are provided for all three cities. All three of the data files contain the same core six (6) columns:
+The Bikeshare dataset is a part of Nanodegree from Udacity. The dataset contains travel information about users in Washington, New York and Chicago. The statistics were computed using:
+Months and days of the week;
+Most frequent times, stations and trips
+Total and average trip duration
 
-- Start Time (e.g., 2017-01-01 00:07:57)
-- End Time (e.g., 2017-01-01 00:20:53)
-- Trip Duration (in seconds - e.g., 776)
-- Start Station (e.g., Broadway & Barry Ave)
-- End Station (e.g., Sedgwick St & North Ave)
-- User Type (Subscriber or Customer)
+### Software
 
-### 1 Statistics Computed
+Visual Studio Code
 
-Popular time of travel (i.e., occurs most often in the start time)
-
-- Most common month
-- Most common day of week
-- Most common hour of day
-
-### 2 Popular stations and trip
-
-- Most common start station
-- Most common end station
-- Most common trip from start to end (i.e., most frequent combination of start station and end station)
-
-### 3 Trip duration
-
-- Total travel time
-- Average travel time
-
-### 4 User info
-
-- Counts of each user type
-- Counts of each gender (only available for NYC and Chicago)
-- Earliest, most recent, most common year of birth (only available for NYC and Chicago).
-
-## Files used
+## Files used and Credits
 
 - [Bikeshare.py](Bikeshare.py)
+- gitignore
+- README.md
